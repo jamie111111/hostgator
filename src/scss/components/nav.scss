@@ -1,29 +1,38 @@
 .container {
-    max-width: 1200px;
+   max-width: 1200px;
     margin: 0 auto;
   
     
 }
+
 .header-box {
     display:flex;
     justify-content:space-between;
     align-items: center;
     height:70px;
-    }
-
+}
 .logo {
     color:white;
     margin-left: 34px;
 }
 
 .site-nav {
-    border-top:1px solid black;
+    max-width: 1200px;
+    margin: 0 auto;
+    display:none;
+    
     background-color:white;
+
+    &--open {
+        display:block;
+    }
+    
     
     ul {
         list-style-type: none;
         display: flex;
         flex-wrap: wrap;
+        
     }
 
     li {
@@ -34,11 +43,11 @@
         text-align:center;
         text-decoration: none;
         display: block;
-        font-size:1.8rem;
+        font-size:1.6rem;
         font-weight: 300;
         line-height: 25.71px;
         text-transform: uppercase;
-        padding: .6em .75em;
+        padding: .65em .75em;
         color:black;
         transition:all .4s ease;
 
@@ -66,6 +75,7 @@
     width:1.75em;
     display:block;
     border-radius: 0px;
+    transition:all .2s ease-in;
 
     
 }
@@ -75,3 +85,33 @@
 .hamburger::after {
     transform:translatey(3px);
 }
+
+
+.main {
+    
+    background: $color-1;
+    height: 500px;
+    border-top:1px solid rgba(255,255,255,0.3);
+    transform: all .2s ease-in-out;
+
+    
+}
+
+.border {
+    height:1px;
+    background: rgba(255,255,255,0.3);
+    width: 100%;
+}
+
+.open .hamburger {
+   
+    transform:rotate(45deg);
+}
+.open .hamburger::before {
+    opacity: 0;
+} 
+.open .hamburger::after {
+    transform:translateY(-3px) rotate(-90deg);
+}
+
+

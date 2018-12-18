@@ -2,15 +2,17 @@
     .menu-toggle {
         display:none;
     }
-    header{
-       
-    }
-    .header {
+    
+    
+    .logo {
+        color:white;
+        margin-left: 45px;
         
     }
-
     .site-nav {
         background:$color-1;
+        
+        
 
         li {
             flex:1 0 0;
