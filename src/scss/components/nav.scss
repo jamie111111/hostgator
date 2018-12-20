@@ -19,12 +19,17 @@
 .site-nav {
     max-width: 1200px;
     margin: 0 auto;
-    display:none;
+    transform: translateY(-185px);
+    opacity: 0;
+    transition: all .5s ease-in-out;
+
+    
     
     background-color:white;
 
     &--open {
-        display:block;
+        transform: translateY(1px);
+        opacity: 1;
     }
     
     
@@ -91,8 +96,10 @@
     
     background: $color-1;
     height: 500px;
-    border-top:1px solid rgba(255,255,255,0.3);
+    
+    //border-top:1px solid rgba(255,255,255,0.3);
     transform: all .2s ease-in-out;
+
 
     
 }

@@ -19,10 +19,15 @@ header {
 .site-nav {
   max-width: 1200px;
   margin: 0 auto;
-  display: none;
+  -webkit-transform: translateY(-185px);
+          transform: translateY(-185px);
+  opacity: 0;
+  transition: all .5s ease-in-out;
   background-color: white; }
   .site-nav--open {
-    display: block; }
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+    opacity: 1; }
   .site-nav ul {
     list-style-type: none;
     display: flex;
@@ -71,7 +76,6 @@ header {
 .main {
   background: #0D3250;
   height: 500px;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-transform: all .2s ease-in-out;
           transform: all .2s ease-in-out; }
 
