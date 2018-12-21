@@ -1,3 +1,66 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #BC10D1;
+  padding: 2rem 1rem; }
+  header .logo {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 200; }
+
+.menu-toggle {
+  background: white;
+  cursor: pointer; }
+
+.hamburger, .hamburger::before, .hamburger::after {
+  content: '';
+  background: black;
+  height: 3px;
+  width: 1.75em;
+  display: block;
+  transition: all .4s ease-in-out; }
+
+.hamburger::before {
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px); }
+
+.hamburger::after {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px); }
+
+.navbar {
+  list-style: none;
+  background: #FC7C05;
+  height: 0;
+  overflow: hidden; }
+  .navbar--open {
+    height: auto;
+    overflow: initial;
+    transition: all .1s ease-in-out; }
+  .navbar li {
+    text-align: center; }
+  .navbar a {
+    display: block;
+    padding: .75em;
+    text-decoration: none;
+    color: white;
+    transition: .3s ease-in-out; }
+    .navbar a:hover {
+      color: black;
+      background: #F696AC;
+      text-decoration: underline; }
+
+main {
+  background: #F696AC;
+  padding: 2em; }
+  main h3 {
+    text-align: center;
+    text-transform: uppercase; }
+  main .text {
+    margin-top: 1rem;
+    line-height: 1.4; }
+
 *,
 *::after,
 *::before {
@@ -10,6 +73,9 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: 3rem;
   font-size: 1.6rem;
   font-family: 'roboto',sans-serif; }
+
+.container {
+  width: 600px;
+  margin: 100px auto; }

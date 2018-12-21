@@ -1,0 +1,92 @@
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background:$color-1;
+    padding:2rem 1rem;
+
+    .logo {
+        color:white;
+        text-transform: uppercase;
+        font-weight: 200;
+    }
+}
+
+.menu-toggle {
+   
+    
+    background:white;
+    cursor:pointer;
+}
+.hamburger, .hamburger::before,.hamburger::after {
+    content:'';
+    background:black;
+    height: 3px;
+    width: 1.75em;
+    display: block;
+    transition: all .4s ease-in-out;
+   
+}
+.hamburger::before {
+    transform:translateY(-7px);
+}
+.hamburger::after {
+    transform: translateY(4px);
+}
+.hamburger::before {
+    //transform: rotate(-405deg);
+}
+
+.open .navbar {
+   
+}
+
+.navbar {
+    list-style: none;
+    background:$color-2;
+    height: 0;
+    overflow: hidden;
+    
+    &--open {
+        height: auto;
+        overflow: initial;
+        transition: all .1s ease-in-out;
+
+    }
+
+    li {
+        
+        text-align: center;
+    }
+
+    a {
+        display: block;
+        padding:.75em;
+        text-decoration: none;
+        color:white;
+        transition:.3s ease-in-out;
+       
+        &:hover {
+           color:black;
+           background:$color-3;
+           text-decoration: underline;
+
+       }
+
+    }
+}
+main {
+    background:$color-3;
+    padding:2em;
+
+    h3 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .text {
+        margin-top: 1rem;
+        line-height: 1.4;
+    }
+}
