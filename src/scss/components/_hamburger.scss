@@ -1,0 +1,28 @@
+.hamburger, .hamburger::before,.hamburger::after {
+    content:'';
+    background:white;
+    height:3px;
+    width:1.75em;
+    display:block;
+    border-radius: 0px;
+    transition:all .2s ease-in;
+
+    
+}
+.hamburger::before {
+    transform:translateY(-6px);
+}
+.hamburger::after {
+    transform:translatey(3px);
+}
+
+.open .hamburger {
+   
+    transform:rotate(45deg);
+}
+.open .hamburger::before {
+    opacity: 0;
+} 
+.open .hamburger::after {
+    transform:translateY(-3px) rotate(-90deg);
+}
