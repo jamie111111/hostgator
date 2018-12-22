@@ -1,0 +1,14 @@
+.cta {
+    padding: 1rem;
+
+    &__btn {
+        color:white;
+        background:linear-gradient(131.61deg,#ff9052 0%,#ff6b17 100%);
+        font-size: 2.4rem;
+        padding:1.2rem 3.2rem;
+        display: inline-block;
+        border-radius: 8px;
+        text-align: center;
+        font-weight: 500;
+    }
+}

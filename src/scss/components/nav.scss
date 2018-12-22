@@ -68,28 +68,7 @@
     cursor:pointer;
 }
 
-.main {
-    position: absolute;
-    width: 100%;
-    z-index: 3;
-    background: $color-1;
-    height: 500px;
-    padding: 2em;
-    text-align: center;
-    
-    transition: all .2s ease-in-out;
-    
-    
-    &--down {
-        transform: translateY(183px);
-    }
 
-    h1 {
-        color:white;
-        text-transform: capitalize;
-        font-size: 4rem;
-    }
-}
 
 .border {
     height:1px;

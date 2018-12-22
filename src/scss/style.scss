@@ -1,9 +1,11 @@
 @import "partials/variables";
 @import "partials/mixins";
 
+@import "base";
 @import "components/header";
 @import "components/nav";
 @import "components/hamburger";
 @import "components/mediaquery";
-@import "base";
+@import "components/buttons";
+@import "components/main";
 
