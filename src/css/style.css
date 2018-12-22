@@ -116,7 +116,10 @@ header {
     .site-nav a {
       color: white; }
   .main {
-    border-top: 1px solid rgba(255, 255, 255, 0.3); } }
+    border-top: 1px solid rgba(255, 255, 255, 0.3); }
+    .main--down {
+      -webkit-transform: translateY(0);
+              transform: translateY(0); } }
 
 *,
 *::after,
