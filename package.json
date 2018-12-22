@@ -4,14 +4,19 @@
   "description": "boiler plate sass",
   "main": "index.js",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
+  "homepage": "https://jamie111111.github.io/hostgator",
   "devDependencies": {
     "browser-sync": "^2.24.6",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {
+    "gh-pages": "^2.0.1"
   }
 }
